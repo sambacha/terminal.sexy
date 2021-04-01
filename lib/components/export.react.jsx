@@ -7,6 +7,7 @@ var saveAs = require('filesaver.js');
 var AppStore = require('../stores/app');
 
 termcolors.json = require('../formats/json');
+termcolors.hyper = require('../formats/hyper');
 
 var Export = React.createClass({
 
@@ -75,6 +76,7 @@ var Export = React.createClass({
             <option value='xresources'>Xresources</option>
             <option value=''>-- OTHER --</option>
             <option value='textmate'>Sublime Text (experimental)</option>
+            <option value='hyper'>Hyper Scheme</option>
             <option value='json'>JSON Scheme</option>
           </select>
         </div>
